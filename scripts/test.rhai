@@ -6,5 +6,12 @@ fn load(){
 
 fn update(delta){
     all += delta;
-    print("hello, delta is: " + delta + " all is " + all);
+}
+
+fn add(a, b){
+    a + b
+}
+
+fn test_fun(s){
+    print(s)
 }
