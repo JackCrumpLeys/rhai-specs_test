@@ -57,13 +57,13 @@ pub type ReflectionTable = MetaTable<dyn Reflection>;
 
 /// Maps resource names to resource ids.
 pub struct ResourceTable {
-    map: HashMap<String, ResourceId>,
+    map: HashMap<String, ResourceId>
 }
 
 impl ResourceTable {
     pub(crate) fn new() -> Self {
         ResourceTable {
-            map: HashMap::default(),
+            map: HashMap::default()
         }
     }
 
@@ -74,6 +74,7 @@ impl ResourceTable {
     fn get(&self, name: &str) -> ResourceId {
         self.map.get(name).cloned().unwrap()
     }
+
 }
 
 pub struct ScriptInput<'a> {
